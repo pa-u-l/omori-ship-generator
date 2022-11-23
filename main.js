@@ -8,7 +8,7 @@ function select(list, size = 2) {
 		charas[i] = list[Math.floor(Math.random() * list.length)];
 	}
 
-	// 
+	// what are the chances of this happening anyway
 	if (checkIfDuplicateExists(charas)) { return select(list, size); }
 	return charas;
 }
