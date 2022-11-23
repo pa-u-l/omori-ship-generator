@@ -9,6 +9,7 @@ function select(list, size = 2) {
 	}
 
 	// what are the chances of this happening anyway
+	console.log(checkIfDuplicateExists(charas))
 	if (checkIfDuplicateExists(charas)) { return select(list, size); }
 	return charas;
 }
