@@ -16,7 +16,7 @@ function select(list, size = 2) {
 
 $("main > button").on("click", function() {
 	$.ajax({
-		url: window.location.href + "assets/datasets/characters_faraway",
+		url: window.location.href + "assets/datasets/characters_faraway.txt",
 		success: function(result) {
 			var split = result.split("\r\n");
 			// console.log(split, $("#polycule-size").val())
