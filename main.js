@@ -15,7 +15,7 @@ function select(list, size = 2) {
 
 $("main > button").on("click", function() {
 	$.ajax({
-		url: "https://pa-u-l.github.io/omori-ship-generator/assets/datasets/characters_faraway",
+		url: window.location.href + "assets/datasets/characters_faraway",
 		success: function(result) {
 			var split = result.split("\r\n");
 
