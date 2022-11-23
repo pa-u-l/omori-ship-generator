@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+
+		<title>OMORI ship generator</title>
+
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script src="./main.js" defer></script>
+		
+	</head>
+	<body>
+		<nav>
+			<h1>OMORI ship generator</h1>
+		</nav>
+
+		<main>
+			<h1 id="combo">hey, press the button!</h1>
+			<button class="generate-btn">Generate</button>
+		</main>
+
+		<footer>
+			<h2>Config:</h2>
+			<label for="polycule-size">Size: </label>
+			<input id="polycule-size" type="number" value="2" min="2" max="450">
+
+			<select id="dataset">
+				<option>characters_all</option>
+				<option>characters_faraway</option>
+			</select>
+		</footer>
+	</body>
+</html>
