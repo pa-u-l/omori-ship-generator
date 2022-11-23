@@ -19,6 +19,7 @@ $("main > button").on("click", function() {
 		url: window.location.href + "assets/datasets/characters_faraway",
 		success: function(result) {
 			var split = result.split("\r\n");
+			console.log(split, $("#polycule-size").val())
 
 			var charas = select(split, $("#polycule-size").val());
 			$("main > h1").text(charas.join("/"));
