@@ -9,7 +9,7 @@ function select(list, size = 2) {
 	}
 
 	// what are the chances of this happening anyway
-	console.log(checkIfDuplicateExists(charas))
+	// console.log(checkIfDuplicateExists(charas))
 	if (checkIfDuplicateExists(charas)) { return select(list, size); }
 	return charas;
 }
@@ -19,7 +19,7 @@ $("main > button").on("click", function() {
 		url: window.location.href + "assets/datasets/characters_faraway",
 		success: function(result) {
 			var split = result.split("\r\n");
-			console.log(split, $("#polycule-size").val())
+			// console.log(split, $("#polycule-size").val())
 
 			var charas = select(split, $("#polycule-size").val());
 			$("main > h1").text(charas.join("/"));
